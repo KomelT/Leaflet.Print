@@ -2,8 +2,8 @@
   "name": "leaflet.print",
   "version": "1.0.0",
   "description": "Leaflet plugin for printing maps",
-  "devDependencies": {},
   "scripts": {
+    "build": "uglifyjs src/leaflet.toposcale.js > dist/leaflet.toposcale.min.js && minify src/leaflet.toposcale.css > dist/leaflet.toposcale.min.css"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/KomelT/Leaflet.Print/issues"
   },
-  "homepage": "https://github.com/KomelT/Leaflet.Print#readme"
+  "homepage": "https://github.com/KomelT/Leaflet.Print#readme",
+  "dependencies": {
+    "minify": "^11.0.1",
+    "uglify-js": "^3.17.4"
+  }
 }
